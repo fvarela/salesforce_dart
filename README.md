@@ -7,15 +7,15 @@ Note that I just compied what I needed from the python library simple_salesforce
 
 ## Usage example
 #### Import:
-`import 'package:Salesforce/salesforce.dart';`
+`import 'package:yourProyect/salesforce.dart';`
 
 #### Initilize
-Use your regular Salesforce credentials plus the securetoken:
-`Salesforce salesforce = Salesforce(
-    username: 'yourname@yourcompany.com',
-    password: 'yourpassword',
+Use your regular Salesforce credentials plus the securetoken:  
+`Salesforce salesforce = Salesforce(  
+    username: 'yourname@yourcompany.com',  
+    password: 'yourpassword',  
     securityToken: 'yoursecuretoken');`
 
 #### Use
-`var queryResults = await salesforce.querySoql(
+`var queryResults = await salesforce.querySoql(  
     "SELECT Name FROM User WHERE Emain = 'yourname@yourcompany.com'");`
