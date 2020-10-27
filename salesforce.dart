@@ -184,27 +184,5 @@ class Salesforce {
       RegExp regExp = new RegExp(r'^[a-zA-Z0-9_.+-]+@varian.com');
     return regExp.stringMatch(_username);
   }
-
-
-   // print('Stop');
-//    String someIds = '(';
-//    if (soslResults['searchRecords'].length > 0) {
-//      for (int i = 0; i < soslResults['searchRecords'].length; i++) {
-//        if (i < soslResults['searchRecords'].length - 1) {
-//          someIds += "'${soslResults['searchRecords'][i]['Id']}', ";
-//        } else {
-//          someIds += "'${soslResults['searchRecords'][i]['Id']}')";
-//        }
-//      }
-//
-//      String soqlTxt = """SELECT Id,
-//                            Title,
-//                            ValidationStatus,
-//                            Manager_Name__c
-//                        FROM Service_Article__kav
-//                        WHERE Id IN $someIds""";
-
-//      return querySoql(soqlTxt);
-//    }
-  }
+}
 
